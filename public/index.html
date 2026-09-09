@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#06101e">
+  <title>Nexus RP</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <header class="nav">
+    <a href="#start" class="brand"><span class="brand-mark">N</span><span>Nexus RP</span></a>
+    <nav class="nav-links">
+      <a href="#frakcje">Frakcje</a>
+      <a href="#serwery">Serwery frakcyjne</a>
+      <a href="#administracja">Administracja</a>
+      <a href="#wsparcie">Wsparcie</a>
+    </nav>
+    <a id="discordTop" class="btn btn-primary" target="_blank" rel="noreferrer">Dołącz do Discorda</a>
+  </header>
+
+  <main>
+    <section id="start" class="hero">
+      <div class="hero-content">
+        <div class="pill">POLSKI ROLEPLAY • ER:LC</div>
+        <h1><span>Nexus</span> RolePlay</h1>
+        <p id="heroDescription">Ładowanie...</p>
+        <div class="hero-actions">
+          <a id="discordHero" class="btn btn-primary btn-lg" target="_blank" rel="noreferrer">💬 Dołącz do Discorda</a>
+          <a href="#frakcje" class="btn btn-secondary btn-lg">📋 Zobacz rekrutacje</a>
+        </div>
+        <div class="server-bar">
+          <div><span>Kod serwera</span><strong id="serverCode">—</strong></div>
+          <div><span>Status</span><strong class="online-dot">● ONLINE</strong></div>
+          <div><span>Społeczność</span><strong id="membersLabel">Nexus RP</strong></div>
+        </div>
+      </div>
+      <div class="hero-card glass">
+        <div class="emblem">N</div>
+        <h3 id="heroNotice">Witamy w Nexus RP</h3>
+        <p>Dołącz do miasta, wybierz swoją ścieżkę i twórz historie razem z innymi graczami.</p>
+      </div>
+    </section>
+
+    <section id="frakcje" class="section">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">REKRUTACJE</span>
+          <h2>Podania do frakcji</h2>
+        </div>
+        <p>Wybierz frakcję, sprawdź status rekrutacji i wyślij podanie.</p>
+      </div>
+      <div id="factionsGrid" class="cards-grid"></div>
+    </section>
+
+    <section id="serwery" class="section section-dark">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">DISCORD</span>
+          <h2>Serwery frakcyjne</h2>
+        </div>
+        <p>Oficjalne serwery Discord poszczególnych frakcji Nexus RP.</p>
+      </div>
+      <div id="factionServers" class="server-cards"></div>
+    </section>
+
+    <section id="administracja" class="section">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">ZESPÓŁ</span>
+          <h2>Lista administracji</h2>
+        </div>
+        <p>Aktualny skład administracji Nexus RP.</p>
+      </div>
+      <div id="adminList" class="admin-list"></div>
+    </section>
+
+    <section id="wsparcie" class="section">
+      <div class="support glass">
+        <div>
+          <span class="eyebrow">WSPARCIE SERWERA</span>
+          <h2>Pomóż rozwijać Nexus RP</h2>
+          <p>Wsparcie pomaga nam rozwijać serwer, organizować konkursy i tworzyć nowe systemy dla graczy.</p>
+        </div>
+        <a id="tipplyButton" class="btn btn-primary btn-lg" target="_blank" rel="noreferrer">💙 Wesprzyj przez Tipply</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand"><span class="brand-mark small">N</span><span>Nexus RP</span></div>
+    <p>© <span id="year"></span> Nexus RP. Projekt RolePlay.</p>
+    <a href="/polityka-prywatnosci">Polityka prywatności</a>
+    <a href="/admin">Panel administracyjny</a>
+  </footer>
+
+  <div id="applicationModal" class="modal hidden">
+    <div class="modal-card">
+      <button id="closeModal" class="modal-close">×</button>
+      <span class="eyebrow">PODANIE</span>
+      <h2 id="applicationTitle">Podanie do frakcji</h2>
+      <form id="applicationForm">
+        <input type="hidden" id="applicationFactionId">
+        <label>Nick Discord*<input id="appDiscord" required placeholder="@twojnick"></label>
+        <label>Nick Roblox*<input id="appRoblox" required placeholder="TwojNickRoblox"></label>
+        <label>Wiek<input id="appAge" inputmode="numeric" placeholder="np. 15"></label>
+        <label>Doświadczenie<textarea id="appExperience" placeholder="Opisz krótko swoje doświadczenie RP..."></textarea></label>
+        <label>Dlaczego chcesz dołączyć?*<textarea id="appMotivation" required placeholder="Napisz kilka zdań..."></textarea></label>
+        <label class="consent-row">
+          <input id="privacyConsent" type="checkbox" required>
+          <span>Zapoznałem/am się z <a href="/polityka-prywatnosci" target="_blank">polityką prywatności</a> i zgadzam się na przetwarzanie danych z podania w celu rekrutacji.</span>
+        </label>
+        <button class="btn btn-primary btn-lg full" type="submit">Wyślij podanie</button>
+        <p id="applicationMessage" class="form-message"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
