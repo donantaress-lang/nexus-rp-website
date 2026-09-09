@@ -1,0 +1,79 @@
+{
+  "settings": {
+    "serverName": "Nexus RP",
+    "tagline": "Realistyczny polski RolePlay w ER:LC",
+    "description": "Dołącz do społeczności Nexus RP, wybierz swoją frakcję i twórz własną historię.",
+    "discordUrl": "https://discord.gg/TWOJ-LINK",
+    "tipplyUrl": "https://tipply.pl/@TWOJ-PROFIL",
+    "serverCode": "nexusrp",
+    "heroNotice": "Rekrutacje do wybranych frakcji są otwarte.",
+    "membersLabel": "Społeczność Nexus RP"
+  },
+  "factions": [
+    {
+      "id": "kwp",
+      "name": "Policja",
+      "icon": "🚓",
+      "description": "Dbaj o bezpieczeństwo mieszkańców, prowadź interwencje i pościgi.",
+      "status": "open",
+      "applicationMode": "form",
+      "applicationUrl": "",
+      "discordUrl": ""
+    },
+    {
+      "id": "psp",
+      "name": "Państwowa Straż Pożarna",
+      "icon": "🚒",
+      "description": "Pożary, wypadki i działania ratownicze na terenie miasta.",
+      "status": "open",
+      "applicationMode": "form",
+      "applicationUrl": "",
+      "discordUrl": ""
+    },
+    {
+      "id": "prm",
+      "name": "Państwowe Ratownictwo Medyczne",
+      "icon": "🚑",
+      "description": "Pomagaj poszkodowanym i prowadź realistyczne działania medyczne.",
+      "status": "closed",
+      "applicationMode": "form",
+      "applicationUrl": "",
+      "discordUrl": ""
+    }
+  ],
+  "factionServers": [
+    {
+      "id": "kwp-server",
+      "name": "KWP • Nexus RP",
+      "icon": "🚓",
+      "description": "Serwer frakcyjny Policji.",
+      "url": ""
+    },
+    {
+      "id": "psp-server",
+      "name": "PSP • Nexus RP",
+      "icon": "🚒",
+      "description": "Serwer frakcyjny Straży Pożarnej.",
+      "url": ""
+    }
+  ],
+  "administration": [
+    {
+      "id": "admin-1",
+      "rank": "Founder",
+      "nick": "Do ustawienia",
+      "discord": "@nick",
+      "status": "active",
+      "note": ""
+    },
+    {
+      "id": "admin-2",
+      "rank": "Owner",
+      "nick": "Do ustawienia",
+      "discord": "@nick",
+      "status": "active",
+      "note": ""
+    }
+  ],
+  "applications": []
+}
